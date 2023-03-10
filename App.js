@@ -10,33 +10,6 @@ export default class App extends Component {
     };
   }
 
-  // handlePress(button) {
-  //   if (button === '=') {
-  //     this.setState({
-  //       calculationText: eval(this.state.calculationText),
-  //     });
-  //   } else if (button === 'C') {
-  //     this.setState({
-  //       calculationText: '',
-  //       resultText: '',
-  //     });
-  //   } else if (button === 'DEL') {
-  //     let text = this.state.calculationText.split('');
-  //     text.pop();
-  //     this.setState({
-  //       calculationText: text.join(''),
-  //     });
-  //   } else {
-  //     const lastChar = this.state.calculationText.slice(-1);
-  //     if (this.isOperator(lastChar) && this.isOperator(button)) {
-  //       return;
-  //     }
-  //     this.setState({
-  //       calculationText: this.state.calculationText + button,
-  //     });
-  //   }
-  // }
-
   handlePress = input => {
     if (input === '=') {
       this.calculateResult();
